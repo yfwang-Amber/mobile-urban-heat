@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile Urban Heat Measurements</title>
+    <meta
+      name="description"
+      content="An introduction to a mobile measurement project mapping fine-scale urban heat and humidity patterns across cities."
+    >
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231d5f50'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23d8a23a'/%3E%3Cpath d='M16 4v6M16 22v6M4 16h6M22 16h6' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="#top">Mobile Urban Heat Measurements</a>
+      <nav aria-label="Primary navigation">
+        <a href="#idea">Idea</a>
+        <a href="#context">Context</a>
+        <a href="#locations">Locations</a>
+        <a href="#method">Method</a>
+        <a href="#observations">Observations</a>
+        <a href="#collaborate">Collaborate</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" role="img" aria-label="A mobile weather sensor mounted on a car during a night transect"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Field measurements for livable cities</p>
+          <h1 id="hero-title">Mapping heat where people actually move.</h1>
+          <p>
+            Our lab uses mobile weather sensors and fixed reference stations to understand how
+            temperature, humidity, shade, water, roads, and buildings shape the air people feel
+            from block to block.
+          </p>
+          <div class="hero-actions" aria-label="Page sections">
+            <a class="button primary" href="#locations">View project locations</a>
+            <a class="button secondary" href="#collaborate">Work with us</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="idea" class="section intro">
+        <div class="section-kicker">The idea</div>
+        <div class="intro-grid">
+          <div>
+            <h2>Urban heat is local.</h2>
+            <p>
+              Weather stations tell us what a city feels like in general. Mobile measurements
+              help reveal what changes along real streets: a shaded block, a busy corridor, a park,
+              a waterfront, a residential neighborhood, or a downtown canyon.
+            </p>
+          </div>
+          <div class="lead-panel">
+            <p>
+              The project connects field measurements with city questions about heat, humidity,
+              shade, water, and urban form.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="context" class="section project-context" aria-labelledby="context-title">
+        <div class="section-kicker">Project context</div>
+        <div class="section-heading">
+          <h2 id="context-title">Fine-scale heat information can support healthier urban decisions.</h2>
+          <p>
+            This vehicle-based project focuses on urban heat and humidity.
+          </p>
+        </div>
+
+        <div class="context-cards">
+          <article>
+            <h3>Public health motivation</h3>
+            <p>
+              Heat and humidity are serious urban stressors. Their impacts are hard to understand
+              with city-wide weather stations alone because conditions can shift block by block.
+            </p>
+          </article>
+          <article>
+            <h3>Vehicle-based sensing</h3>
+            <p>
+              Current fieldwork uses a car-mounted Smart-T sensor to measure air temperature and
+              humidity along planned transects, paired with fixed reference observations.
+            </p>
+          </article>
+          <article>
+            <h3>Comparable field framework</h3>
+            <p>
+              Repeated observations create summaries that can be compared across cities.
+            </p>
+          </article>
+        </div>
+
+        <div class="funding-note">
+          <p class="mode-label">Project support</p>
+          <p>
+            The project is supported by a grant from the Robert Wood Johnson Foundation and a
+            Leitner Award for Uncommon Collaboration.
+          </p>
+        </div>
+      </section>
+
+      <section id="locations" class="section map-band" aria-labelledby="locations-title">
+        <div class="section-kicker">Where we work</div>
+        <div class="section-heading">
+          <h2 id="locations-title">A growing city-to-city measurement network.</h2>
+          <p>
+            The map shows city-level project locations.
+          </p>
+        </div>
+
+        <div class="map-layout">
+          <div class="world-map" id="worldMap" aria-label="World map with city-level project markers">
+            <img class="world-map-image" src="assets/world_map_earth.png" alt="" aria-hidden="true">
+          </div>
+          <aside class="location-panel" aria-live="polite">
+            <p class="panel-label">Selected location</p>
+            <h3 id="locationName">Project locations</h3>
+            <p id="locationText">
+              City-level markers show where the project has field activity, planning context,
+              or active collaboration.
+            </p>
+            <ul id="locationList" class="location-list" aria-label="Project location list"></ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="method" class="section method" aria-labelledby="method-title">
+        <div class="section-kicker">How it works</div>
+        <div class="section-heading">
+          <h2 id="method-title">A simple field idea with careful processing.</h2>
+          <p>Mobile and fixed sensors make street-scale heat easier to compare.</p>
+        </div>
+
+        <div class="steps">
+          <article>
+            <span class="step-number">01</span>
+            <h3>Measure along real streets</h3>
+            <p>
+              A compact sensor records air temperature and humidity while a vehicle follows a
+              planned transect through different urban environments.
+            </p>
+          </article>
+          <article>
+            <span class="step-number">02</span>
+            <h3>Keep a fixed reference</h3>
+            <p>
+              A stationary logger tracks background conditions, so we can separate broad weather
+              changes from local street-scale contrasts.
+            </p>
+          </article>
+          <article>
+            <span class="step-number">03</span>
+            <h3>Build comparable summaries</h3>
+            <p>
+              Repeated trips are checked and summarized for discussion with partners.
+            </p>
+          </article>
+          <article>
+            <span class="step-number">04</span>
+            <h3>Connect cities</h3>
+            <p>
+              Across locations, the same framework helps test how local climate, urban form, and
+              field conditions shape heat exposure.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="observations" class="section visual-section observations" aria-labelledby="observations-title">
+        <div class="section-kicker">Observations</div>
+        <div class="section-heading">
+          <h2 id="observations-title">Two observation modes, one comparison.</h2>
+          <p>
+            Fixed sensors and vehicle-mounted sensors answer different parts of the same field
+            question: what is changing through time, and what is changing from place to place?
+          </p>
+        </div>
+
+        <div class="observation-grid">
+          <article class="observation-card">
+            <div class="observation-copy">
+              <p class="mode-label">Fixed observations</p>
+              <h3>Reference loggers keep track of background conditions.</h3>
+              <p>
+                HOBO-style fixed sensors record temperature and humidity at selected local settings
+                during the field period. They help separate city-wide weather changes from
+                street-scale contrasts observed by the mobile sensor.
+              </p>
+            </div>
+            <div class="paired-photos">
+              <figure>
+                <img src="assets/fixed_hobo_barcelona.jpg" alt="Fixed temperature and humidity logger attached to a tree">
+                <figcaption>Fixed logger in a shaded urban setting.</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/fixed_hobo_madison.jpg" alt="Fixed temperature and humidity logger mounted near open grass">
+                <figcaption>Reference logging in an open landscape.</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article class="observation-card">
+            <div class="observation-copy">
+              <p class="mode-label">Mobile observations</p>
+              <h3>Vehicle-mounted sensors sample the air along real streets.</h3>
+              <p>
+                A Smart-T sensor travels with the vehicle during repeated transects. The mobile
+                observations add spatial context across neighborhoods, road types, shade, buildings,
+                and water-adjacent environments.
+              </p>
+            </div>
+            <div class="paired-photos">
+              <figure>
+                <img src="assets/mobile_smartt_night.jpg" alt="Smart-T mobile sensor mounted on a vehicle roof at night">
+                <figcaption>Mobile setup during a nighttime transect.</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/mobile_smartt_day.jpg" alt="Smart-T mobile sensor mounted on a vehicle roof during daytime">
+                <figcaption>Vehicle-mounted measurement setup.</figcaption>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section route-context" aria-labelledby="route-context-title">
+        <div class="section-kicker">Transect context</div>
+        <div class="section-heading">
+          <h2 id="route-context-title">Mobile routes pass through different urban environments.</h2>
+          <p>
+            Transects are designed to sample broad setting types such as suburban streets, downtown
+            corridors, forested shade, and water-adjacent edges.
+          </p>
+        </div>
+
+        <div class="context-grid">
+          <figure>
+            <img src="assets/route_suburban.jpg" alt="Tree-lined residential street context">
+            <figcaption>Suburban and residential edges.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/route_downtown.jpg" alt="Downtown buildings and street corridor context">
+            <figcaption>Denser downtown corridors.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/route_forest.jpg" alt="Forested roadside shade context">
+            <figcaption>Forested and heavily shaded streets.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/route_waterfront.jpg" alt="Water-adjacent landscape context">
+            <figcaption>Water-adjacent edges.</figcaption>
+          </figure>
+        </div>
+
+        <div class="spatial-preview" aria-label="Example spatial summaries">
+          <div class="spatial-preview-copy">
+            <p class="mode-label">Example spatial summaries</p>
+            <p>
+              These cropped, low-resolution examples show how mobile observations become spatial summaries.
+            </p>
+          </div>
+          <div class="spatial-preview-grid">
+            <figure>
+              <img src="assets/spatial_preview_west.jpg" alt="Low-resolution spatial air-temperature summary from a western U.S. city">
+              <figcaption>Western U.S. example of street-scale air-temperature differences.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/spatial_preview_midwest.jpg" alt="Low-resolution spatial air-temperature summary from an upper Midwest city">
+              <figcaption>Upper Midwest example of the same summary workflow.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/spatial_preview_southeast.jpg" alt="Low-resolution spatial air-temperature summary from a southeastern U.S. city">
+              <figcaption>Southeastern U.S. example from another local context.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="collaborate" class="section collaborate" aria-labelledby="collaborate-title">
+        <div class="collaborate-copy">
+          <div class="section-kicker">Collaborate</div>
+          <h2 id="collaborate-title">We are looking for partners who know their cities.</h2>
+          <p>
+            The project works best with collaborators who can connect field measurements to real
+            urban questions: heat risk, tree shade, waterfront effects, public health, transport
+            corridors, neighborhood planning, or climate adaptation.
+          </p>
+        </div>
+        <div class="collaboration-needs">
+          <article>
+            <h3>Local context</h3>
+            <p>Neighborhood knowledge, route planning, permissions, and interpretation.</p>
+          </article>
+          <article>
+            <h3>Field support</h3>
+            <p>Safe transects, fixed reference placement, and repeated observations.</p>
+          </article>
+          <article>
+            <h3>Shared questions</h3>
+            <p>Practical problems where fine-scale heat and humidity measurements can help.</p>
+          </article>
+        </div>
+        <div class="project-contacts" aria-label="Project contacts">
+          <article class="contact-card">
+            <img src="assets/contact_xuhui_lee.jpg" alt="Xuhui Lee">
+            <div class="contact-copy">
+              <p class="contact-role">Faculty lead</p>
+              <h3>Xuhui Lee</h3>
+              <p>Sara Shallenberger Brown Professor of Climate Science, Yale School of the Environment</p>
+              <div class="contact-links">
+                <a href="mailto:xuhui.lee@yale.edu">xuhui.lee@yale.edu</a>
+                <a href="tel:2034326271">203-432-6271</a>
+                <a href="https://environment.yale.edu/directory/faculty/xuhui-lee">Yale profile</a>
+              </div>
+            </div>
+          </article>
+          <article class="contact-card">
+            <img src="assets/contact_yifei_wang.jpg" alt="Yifei Wang">
+            <div class="contact-copy">
+              <p class="contact-role">Project contact</p>
+              <h3>Yifei Wang</h3>
+              <p>Contact for collaboration questions about the mobile measurement project.</p>
+              <div class="contact-links">
+                <a href="mailto:yifei.wang@yale.edu">yifei.wang@yale.edu</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Mobile Urban Heat Measurements</p>
+      <p>City-level project introduction for collaborators and community partners.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

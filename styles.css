@@ -497,6 +497,10 @@ h1 {
   min-height: 320px;
 }
 
+.mobile-observation-photos {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .photo-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -548,42 +552,6 @@ figcaption {
 .context-grid figure img {
   height: 250px;
   min-height: 250px;
-}
-
-.spatial-preview {
-  margin-top: clamp(42px, 6vw, 72px);
-  padding-top: clamp(28px, 4vw, 44px);
-  border-top: 1px solid var(--line);
-}
-
-.spatial-preview-copy {
-  display: grid;
-  grid-template-columns: minmax(0, 0.55fr) minmax(280px, 0.75fr);
-  gap: clamp(22px, 5vw, 62px);
-  align-items: start;
-  margin-bottom: 24px;
-}
-
-.spatial-preview-copy p:not(.mode-label) {
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 1rem;
-  line-height: 1.7;
-}
-
-.spatial-preview-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.spatial-preview-grid figure img {
-  width: 100%;
-  height: auto;
-  min-height: 0;
-  aspect-ratio: 18 / 13;
-  object-fit: cover;
-  background: var(--paper);
 }
 
 .collaborate {
@@ -711,7 +679,6 @@ figcaption {
   .map-layout,
   .observation-card,
   .collaborate,
-  .spatial-preview-copy,
   .project-contacts {
     grid-template-columns: 1fr;
   }
@@ -719,7 +686,7 @@ figcaption {
   .steps,
   .context-cards,
   .context-grid,
-  .spatial-preview-grid {
+  .mobile-observation-photos {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -774,8 +741,7 @@ figcaption {
   .steps,
   .context-cards,
   .paired-photos,
-  .context-grid,
-  .spatial-preview-grid {
+  .context-grid {
     grid-template-columns: 1fr;
   }
 

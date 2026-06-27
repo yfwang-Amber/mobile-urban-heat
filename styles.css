@@ -296,7 +296,7 @@ h1 {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(270px, 360px);
   gap: 24px;
-  align-items: stretch;
+  align-items: start;
 }
 
 .world-map {
@@ -359,6 +359,7 @@ h1 {
 }
 
 .location-panel {
+  width: 100%;
   padding: 28px;
   background: var(--night);
   color: var(--white);
